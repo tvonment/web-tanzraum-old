@@ -8,33 +8,29 @@ summarylength = 25
 [menu]
   # Navbar Menus
   [[menu.nav]]
-    name    = "Home"
+    name    = "Start"
     url     = ""
     weight  = 1
   [[menu.nav]]
-    name    = "About"
-    url     = "about"
+    name    = "Veranstaltungen"
+    url     = "veranstaltungen"
     weight  = 2
   [[menu.nav]]
-    name    = "Portfolio"
-    url     = "portfolio"
+    name    = "Raum"
+    url     = "raum"
     weight  = 3
   [[menu.nav]]
-    name    = "Blog"
-    url     = "blog"
-    weight  = 4
-  [[menu.nav]]
-    name    = "Get in touch"
+    name    = "Kontakt"
     url     = "contact"
-    weight  = 5
+    weight  = 4
 
 # Site Params
 [params]
   logo = "images/logo.png"
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
-  author = "StaticMania"
+  description = "TanzRaum | Offizieller Webauftritt"
+  author = "TanzRaum"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
   # We're using formspree.io for form handling, paste your formspree url below
@@ -43,20 +39,21 @@ summarylength = 25
   # Navbar Action Button
   [params.navAction]
     status  = true
-    name    = "Get in touch"
-    url     = "contact"
+    name    = "Kontakt"
+    url     = "kontakt"
   
 
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "images/backgrounds/hero-background.jpg"
+    background_image      = "images/backgrounds/raum.jpeg"
     heading               = "We’re a Design Studio That Belies In the Great Ideas"
     tagline               = "WE WORK HARD, WE PLAY HARD"
-    primary_button        = "See Our Works"
-    primary_button_url    = "portfolio"
-    secondary_button      = "Connect with Us"
-    secondary_button_url  = "contact"
+    primary_button        = "Veranstaltungen"
+    primary_button_url    = "veranstaltungen"
+    secondary_button      = "Raum"
+    secondary_button_url  = "raum"
+    arrowlink             = ""
 
   [params.portfolio]
     enable    = true
@@ -68,7 +65,7 @@ summarylength = 25
     background_image    = "images/backgrounds/cta-background.jpg"
     title               = "LET’S WORK TOGETHER"
     primary_button      = "Submit Query"
-    primary_button_url  = "contact"
+    primary_button_url  = "kontakt"
     secondary_button    = "Not Convinced"
     secondary_button_url = "portfolio"
 
