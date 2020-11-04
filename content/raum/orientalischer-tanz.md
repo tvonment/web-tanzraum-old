@@ -1,10 +1,12 @@
 ---
-title: "KIO-TAPE BRAND"
-date: 2019-12-23T20:56:42+06:00
-type: portfolio
+title: "Orientalischer Tanz"
+date: 2019-12-23T15:44:46+06:00
+type: raum
 image: "images/projects/project-thumb-four.jpg"
-category: ["PRODUCT LABEL"]
-project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
+lead: ["Natalie River"]
+audience: ["Frauen"]
+category: ["Tanz"]
+raum_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
 ---
 
 The “Seamless Watch” watch has all the features that users expect in a digital watch, and some unusual features.
@@ -26,4 +28,3 @@ Mystery answer. After entering this mode, the screen initially displays “ask n
 Note: these strings are for the English version of the watch, we will need to use completely different strings in other countries without reprogramming the logic of the watch.
 
 The user may cycle among all modes (date/time, timer, mystery answer) by pressing the mode button.
-

@@ -33,8 +33,7 @@ summarylength = 25
   author = "TanzRaum"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
-  # We're using formspree.io for form handling, paste your formspree url below
-  formspreeFormUrl  = "https://formspree.io/myykjpje"
+
   
   # Navbar Action Button
   [params.navAction]
@@ -62,20 +61,20 @@ summarylength = 25
 
   [params.call_to_action]
     enable              = true
-    background_image    = "images/backgrounds/cta-background.jpg"
-    title               = "LET’S WORK TOGETHER"
-    primary_button      = "Submit Query"
-    primary_button_url  = "kontakt"
-    secondary_button    = "Not Convinced"
-    secondary_button_url = "portfolio"
+    background_image    = "/images/backgrounds/cta-background.jpg"
+    title               = "Kontakt"
+    form_heading        = "Kontaktformular"
+    # We're using formspree.io for form handling, paste your formspree url below
+    formspreeFormUrl  = "https://formspree.io/f/mvovrryp"
+
 
   [params.footer]
     # Footer Contact Info
     [params.footer.contactInfo]
-      title   = "Contact Info"
-      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
-      phone   = "409-896-1444"
-      email   = "info@roxo.co"
+      title   = "Kontaktinfromationen"
+      address = "Mühlebühl 16a<br>9100 Herisau"
+      phone   = "+41 79 463 85 43"
+      email   = "info@tanzraum.ch"
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"

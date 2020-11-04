@@ -1,30 +1,40 @@
 {{ with .Site.Params.call_to_action }}
   {{ if .enable }}
-  <section class="site-cta" style='background-image: url("{{ .background_image | absURL }}");'>
+  <section class="site-contact">
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
-          <h1 class="site-cta-title">{{ .title }}</h1>
-          <ul class="site-cta-buttons">
-            <li>
-              <a href="{{ .primary_button_url | absURL }}" class="btn btn-secondary">
-                <span class="btn-area">
-                  <span data-text="{{ .primary_button }}">
-                    {{ .primary_button }}
-                  </span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="{{ .secondary_button_url | absURL }}" class="btn btn-primary">
-                <span class="btn-area">
-                  <span data-text="{{ .secondary_button }}">
-                    {{ .secondary_button }}
-                  </span>
-                </span>
-              </a>
-            </li>
-          </ul>
+        <div class="col-lg-5">
+          <h1 class="site-contact-title">
+            {{ .title | safeHTML }}
+          </h1>
+        </div>
+        <div class="col-lg-6 ml-auto">
+          <div class="site-contact-form">
+            <h4>{{ .form_heading }}</h4>
+            <form id="contact-form" action="{{ .formspreeFormUrl }}" method="POST">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" id="form-text" name="text" rows="6" placeholder="Nachricht"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" id="contact-form-button">
+                    <span class="btn-area">
+                      <span data-text="Senden">
+                        Senden
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <p id="contact-form-status"></p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

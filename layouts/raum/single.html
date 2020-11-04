@@ -1,33 +1,50 @@
 {{ define "main" }}
 
-<section class="site-project-single-section">
+<section class="site-raum-single-section">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <div class="site-project-single">
+        <div class="site-raum-single">
           <h1>
             {{ .Title }}
           </h1>
-          <div class="site-project-single-description">
+          <div class="site-raum-single-description">
             {{ .Content }}
           </div>
-          <div class="site-project-single-image">
-            {{ range .Params.project_images }}
-            <img src="{{ . | absURL }}" alt="project image">
+          <div class="site-raum-single-image">
+            {{ range .Params.raum_images }}
+            <img src="{{ . | absURL }}" alt="raum image">
             {{ end }}
           </div>
-          {{ if .NextInSection }}
-          <div class="site-project-single-action">
-            <a href="{{.NextInSection.Permalink}}">
-              <span class="link-area">
-                <span data-text="Next Project">
-                  Next Project
+
+          <div class="row">
+            <div class="site-raum-single-action col-sm-6">
+              {{ if .PrevInSection }}
+              <a href="{{.PrevInSection.Permalink}}">
+                <img src="{{ "/images/to-top.svg" | absURL }}" alt="prev course">
+                <span class="link-area">
+                  <span data-text="Vorheriger Kurs">
+                    Vorheriger Kurs
+                  </span>
                 </span>
-              </span>
-              <img src="{{ "images/to-top.svg" | absURL }}" alt="next project">
-            </a>
+              </a>
+              {{ end }}
+            </div>
+
+            {{ if .NextInSection }}
+            <div class="site-raum-single-action col-sm-6">
+              <a href="{{.NextInSection.Permalink}}">
+                <span class="link-area">
+                  <span data-text="Nächster Kurs">
+                    Nächster Kurs
+                  </span>
+                </span>
+                <img src="{{ "/images/to-top.svg" | absURL }}" alt="next course">
+              </a>
+            </div>
+            {{ end }}
+
           </div>
-          {{ end }}
         </div>
       </div>
     </div>
